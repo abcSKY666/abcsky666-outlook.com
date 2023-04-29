@@ -44,10 +44,12 @@ function changeLibraryPage(pageNum) {
 	// 将所有按钮恢复原来的颜色
 	for (let i = 0; i < buttons.length; i++) {
 		buttons[i].style["background-color"] = "white"; //先去除之前的样式
+		buttons[i].style["color"] = "black";
 	}
 
 	// 将当前按钮变为蓝色
 	document.getElementById("lib_button" + pageNum).style["background-color"] = "skyblue";
+	document.getElementById("lib_button" + pageNum).style["color"] = "white";
 }
 
 // 页面加载完成后执行一些操作
